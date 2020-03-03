@@ -6,7 +6,7 @@
         <div class="container d-flex justify-content-between border p-3">
             <div>
                 @if($task->priority == 1)
-                    <h4>{{ $task->title }}</h4>
+                    <h4><a href="/tasks/{{$task->id}}">{{ $task->title }}</a></h4>
                 @elseif($task->priority == 2)
                     <h4 class="text-primary">{{ $task->title }}</h4>
                 @elseif($task->priority == 3)

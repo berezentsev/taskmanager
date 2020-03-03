@@ -12,3 +12,4 @@
 */
 
 Route::get('/', 'TaskController@Index');
+Route::get('/tasks/{id}', 'TaskController@Show');
